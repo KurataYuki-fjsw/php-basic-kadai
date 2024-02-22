@@ -11,7 +11,7 @@
       <?php
          $nums = [15, 4, 18, 23, 10];
 
-         function sort_2way($order,$nums)	{
+         function sort_2way($nums,$order)	{
           if( $order) {
             echo '昇順にソートします。<br>';
             sort($nums, SORT_NUMERIC);
@@ -27,11 +27,8 @@
          }
         }
 
-          $order = true;
-          echo sort_2way($order,$nums);
-
-          $order = false;
-          echo sort_2way($order,$nums);
+          echo sort_2way($nums,true);
+          echo sort_2way($nums,false);
 
       ?>
     </p>
